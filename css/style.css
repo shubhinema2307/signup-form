@@ -1,0 +1,209 @@
+/* common css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* basic css */
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+	max-width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-text, .signup-form{
+    width: 50%;
+}
+
+.sign-up-page {
+	height: 100vh;
+    padding: 100px 0;
+  	background-image: url('../images/bg-intro-desktop.png'), linear-gradient(0deg, rgba(255,121,121,100%), rgba(255,121,121,100%));
+	background-size: cover;
+}
+
+.info-text h1{
+	font-size: 50px;
+	line-height: 55px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.info-text p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #ffffff;
+	
+}
+
+.signup-form-div {
+	background-color: #ffffff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 20%);
+	text-align: center;
+}
+
+.signup-form-div input {
+	width: 100%;
+    padding: 20px;
+    border: 1px solid #5E54A4;
+    border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.signup-form-div .fa-exclamation-circle {
+	position: absolute;
+}
+
+.signup-form-div .error {
+	color:hsl(0, 100%, 74%);
+	font-size: 12px;
+	text-align: right;
+	display: none;
+}
+
+.signup-form .tryit {
+	color: #ffffff;
+	background-color: #5E54A4;
+	padding: 20px;
+	margin-bottom: 20px;
+    box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 20%);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.signup-form .btn-submit {
+	width: 100%;
+	color: #ffffff;
+	background-color: #38CC8B;
+	padding: 20px;
+	border: 1px solid #38CC8B;
+	border-radius: 10px;
+	margin: 20px 0;
+
+	/* box-shadow: 0px 8px 2px 0px #38CC8B; */
+}
+
+.signup-form .termcondition {
+	font-size: 12px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+.signup-form span {
+	color: hsl(0, 100%, 74%);
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+.container {max-width: 90%;}
+.sign-up-page {height: auto;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+.container {max-width: 95%;}
+.row {width: 100%;display: block;align-items: center;}
+.info-text, .signup-form{width: 100%;}
+.sign-up-page {height: auto; padding: 88px 0;background-image: url('../images/bg-intro-mobile.png'), linear-gradient(0deg, rgba(255,121,121,100%), rgba(255,121,121,100%));background-size: cover;}
+.info-text h1 {font-size: 32px;line-height: 36px; margin-bottom: 16px; text-align: center;}
+.info-text p {font-size: 16px;text-align: center;}
+.info-text {margin-bottom: 100px;}
+.signup-form .tryit {    padding: 30px 75px;line-height: 25px;}
+.signup-form .termcondition {line-height: 20px;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+
+.container {max-width: 95%;}
+.row {width: 100%;display: block;align-items: center;}
+.info-text, .signup-form{width: 100%;}
+.sign-up-page {height: auto; padding: 88px 0;background-image: url('../images/bg-intro-mobile.png'), linear-gradient(0deg, rgba(255,121,121,100%), rgba(255,121,121,100%));background-size: cover;}
+.info-text h1 {font-size: 28px;line-height: 36px; margin-bottom: 16px; text-align: center;}
+.info-text p {font-size: 16px;text-align: center;}
+.info-text {margin-bottom: 100px;}
+.signup-form .tryit {    padding: 30px 75px;line-height: 25px;}
+.signup-form .termcondition {line-height: 20px;}
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.container {max-width: 95%;}
+.row {width: 100%;display: block;align-items: center;}
+.info-text, .signup-form{width: 100%;}
+.sign-up-page {height: auto; padding: 88px 0;background-image: url('../images/bg-intro-mobile.png'), linear-gradient(0deg, rgba(255,121,121,100%), rgba(255,121,121,100%));background-size: cover;}
+.info-text h1 {font-size: 28px;line-height: 36px; margin-bottom: 16px; text-align: center;}
+.info-text p {font-size: 16px;text-align: center;}
+.info-text {margin-bottom: 100px;}
+.signup-form .tryit {    padding: 30px 75px;line-height: 25px;}
+.signup-form .termcondition {line-height: 20px;}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+  <section class="sign-up-page">
+    <div class="container">
+    <div class="row">
+
+      <div class="info-text">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+
+      <div class="signup-form">
+        <p class="tryit">Try it free 7 days then $20/mo. thereafter</p>
+        <div class="signup-form-div">
+          <form action="" name="" method="">
+
+            <div class="name">
+              <i class="fas fa-exclamation-circle"></i>
+              <input type="text" name="fname" id="fname" placeholder="First Name">
+              <p class="error" id="error-fname"><i>first name can not be empty</i></p>
+            </div>
+
+            <i class="fas fa-exclamation-circle"></i>
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <p class="error" id="error-lname"><i>last name can not be empty</i></p>
+
+            <i class="fas fa-exclamation-circle"></i>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <p class="error" id="error-email"><i>looks like this is not an email</i></p>
+
+            <i class="fas fa-exclamation-circle"></i>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <p class="error" id="error-pass"><i>password can not be empty</i></p>
+
+
+            <button type="button" class="btn-submit" onclick="form_validation();">CLAIM YOUR FREE TRIAL</button>
+            <p class="termcondition">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+<script src="js/function.js"></script>
